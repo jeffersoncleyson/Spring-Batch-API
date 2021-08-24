@@ -21,6 +21,8 @@ import java.util.List;
 @Slf4j
 public class TaskController {
 
+    //db.task.updateMany({}, {$set: {status: "WAITING"}});
+
     @Autowired
     private TaskService taskService;
 

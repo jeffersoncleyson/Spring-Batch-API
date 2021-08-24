@@ -13,7 +13,7 @@ public class ProcessorMongoDB implements ItemProcessor<Task, Task> {
     @Override
     public Task process(Task task) throws Exception {
 
-        log.info("Processing task with id : {} changing state {} to {}", task.getId(), task.getStatus(), StateEnum.RUNNING);
+        //log.info("Processing task with id : {} changing state {} to {}", task.getId(), task.getStatus(), StateEnum.RUNNING);
 
         task.setStatus(StateEnum.RUNNING);
 
